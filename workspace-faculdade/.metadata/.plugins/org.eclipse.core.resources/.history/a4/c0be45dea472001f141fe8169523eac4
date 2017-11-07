@@ -1,0 +1,74 @@
+package controle;
+import dominio.Turma;
+import dominio.persistencia.HibernateUtil;
+import dominio.persistencia.AlunoDAO;
+import dominio.persistencia.TurmaDAO;
+import java.util.List;
+
+import javax.faces.context.FacesContext;
+
+import dominio.Aluno;
+import dominio.persistencia.HibernateUtil;
+
+
+public class TurmaMB {
+	
+		private Turma Turma = new Turma();
+		private TurmaDAO dao = new TurmaDAO(HibernateUtil.getSession());
+
+		public String abrirAlteracao()
+		{
+			FacesContext contexto = FacesContext.getCurrentInstance();
+			String id = contexto.getExternalContext().getRequestParameterMap().get(
+					"id");
+
+			this.Turma = this.dao.obter(Long.parseLong(id));
+
+			return "editarTurma";
+		}
+
+		public String excluir()
+		{
+			FacesContext contexto = FacesContext.getCurrentInstance();
+			String id = contexto.getExternalContext().getRequestParameterMap().get(
+					"id");
+
+			this.Turma = this.dao.obter(Long.parseLong(id));
+			this.dao.remover(this.Turma);
+
+			return "listar";
+		}
+
+		public String salvar()
+		{
+			if (this.getTurma().getId() == 0)
+				this.getTurma().setId(null);
+
+			this.dao.alterar(this.getTurma());
+			return "listar";
+
+		}
+
+		public Turma getTurma()
+		{
+			return Turma;
+		}
+
+		public void setTurma(Turma usuario)
+		{
+			this.Turma = usuario;
+		}
+
+		public List<Turma> getTurmas()
+		{
+			return this.dao.listarTodos();
+		}
+
+		public Integer getNumeroTurmas()
+		{
+			return getTurmas().size();
+		}
+
+	}
+
+

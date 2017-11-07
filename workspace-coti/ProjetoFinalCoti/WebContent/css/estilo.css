@@ -1,0 +1,109 @@
+﻿@charset "utf-8";
+/* CSS Document */
+/* Autores: Gileno Oliveira Pinto e Raphael Carlos Rocha Fonseca. */
+/* Última modificação: 2011-03-14. */
+
+/* Estilo para tags do HTML. */
+body{
+	background-color: #CCC;
+	margin: 0;
+}
+
+h3{
+	text-align: center;
+}
+
+input{
+	border: solid #333;
+	background: #999;
+}
+
+input:focus{
+	border: solid #333;
+	background: #FF0;
+}
+
+textarea{
+	border: solid #333;
+	background: #999;
+}
+
+textarea:focus{
+	border: solid #333;
+	background: #FF0;
+}
+
+/* Estilo para TAGs criadas */
+
+titulo{
+	text-align: center;
+	text-transform: uppercase;
+	vertical-align: middle;
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 20px;
+	text-shadow: 3px 5px 8px #FFF;
+}
+
+el{
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	color: #F00;
+}
+
+/* Estilo para Divs. */
+
+#site{
+	width: 850px;
+	height: auto;
+	margin: auto;
+	background-color: #CCC;
+	border-left: thick solid #333;
+	border-right: thick solid #333;
+	border-bottom: thick solid #333;
+}
+
+#topo{
+	padding-top: 30px;
+	min-height: 100px;
+	background-color: #999;
+	text-align: center;
+	margin: 0;
+}
+
+#corpo{
+	margin-left: 50px;
+	min-height: 230px;
+	background-color: #CCC;	
+}
+
+#rodape{
+	margin-top: 30px;
+	margin-left: 50px;
+	min-heigth: 50px;
+	background-color: #CCC;
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #000;
+}
+
+/* Estilo para os botões dos formulários */
+
+#botao{
+	min-width: 100px;
+	height: 40px;
+	background: #006;
+	font-family: Tahoma, Geneva, sans-serif;
+	color: #FFF;
+	border: solid #333;
+}
+
+#botao:hover{
+	min-width: 100px;
+	height: 40px;
+	background: #03F;
+	font-family: Tahoma, Geneva, sans-serif;
+	color: #FFF;
+	border: solid #333;
+}

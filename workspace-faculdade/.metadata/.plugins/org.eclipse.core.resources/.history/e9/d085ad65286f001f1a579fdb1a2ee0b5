@@ -1,0 +1,68 @@
+package uni.jsf.controle;
+
+import java.util.List;
+
+import javax.faces.context.FacesContext;
+
+import uni.jsf.dominio.Livro;
+import uni.jsf.dominio.persistencia.HibernateUtil;
+import uni.jsf.dominio.persistencia.LivroDAO;
+
+public class LivroMB
+	{
+		private Livro livro = new Livro();
+		private LivroDAO dao = new LivroDAO(HibernateUtil.getSession());
+
+		public String abrirAlteracao()
+			{
+				FacesContext contexto = FacesContext.getCurrentInstance();
+				String id = contexto.getExternalContext()
+						.getRequestParameterMap().get("id");
+
+				this.livro = this.dao.obter(Long.parseLong(id));
+
+				return "editarLivro";
+			}
+
+		public String excluir()
+			{
+				FacesContext contexto = FacesContext.getCurrentInstance();
+				String id = contexto.getExternalContext()
+						.getRequestParameterMap().get("id");
+
+				this.livro = this.dao.obter(Long.parseLong(id));
+				this.dao.remover(this.livro);
+
+				return "listar";
+			}
+
+		public String salvar()
+			{
+				if (this.getLivro().getId() == 0)
+					this.getLivro().setId(null);
+
+				this.dao.alterar(this.getLivro());
+				return "listar";
+
+			}
+
+		public Livro getLivro()
+			{
+				return livro;
+			}
+
+		public void setLivro(Livro usuario)
+			{
+				this.livro = usuario;
+			}
+
+		public List<Livro> getLivros()
+			{
+				return this.dao.listarTodos();
+			}
+
+		public Integer getNumeroLivros()
+			{
+				return getLivros().size();
+			}
+	}

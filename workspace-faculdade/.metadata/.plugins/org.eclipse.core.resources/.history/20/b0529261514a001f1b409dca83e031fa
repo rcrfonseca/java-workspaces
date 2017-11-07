@@ -1,0 +1,29 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Sistema Gerenciador de Estacionamentos</title>
+
+
+</head>
+<body>
+<img alt="Logo Unigranrio" src="imagens/header_uni.jpg"></img>
+<a href="login.jsp"> </a>Efetuar Logoff<br>
+<br>
+<marquee>Bem vindo ao sistema Gileno´s Car </marquee>
+<br></br>
+Selecione a opção desejada:
+<br>
+<a href="pagina_usuario.jsp">Cadastrar Usuários<br></a>
+<a href="pagina_veiculo.jsp">Cadastrar Veículos</a>
+<a href="pagina_cliente.jsp"><br>Cadastrar Clientes<br></a>
+<a href="pagina_parametros.jsp">Cadastrar Parâmetros do Sistema</a>
+<a href="pagina_manter_entradas.jsp"><br>Registrar entrada de veículos<br></a>
+<a href="pagina_manter_saidas.jsp">Registrar saída de veículos</a>
+<br><a href="pagina_manter_saidas.jsp">Exibir Vagas</a>
+<br>
+
+</body>
+</html>

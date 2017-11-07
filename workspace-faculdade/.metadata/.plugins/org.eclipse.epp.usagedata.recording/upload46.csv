@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+executed,command,org.eclipse.ui,3.5.0.I20090604-2000,"org.eclipse.ui.file.save",1271525849371
+activated,editor,org.eclipse.jst.pagedesigner,1.2.0.v20090602,"org.eclipse.jst.pagedesigner.PageDesignerEditor",1271525854862
+activated,view,org.eclipse.ui.views,3.4.0.I20090525-2000,"org.eclipse.ui.views.PropertySheet",1271525863298
+no handler,command,org.eclipse.ui,3.5.0.I20090604-2000,"org.eclipse.ui.edit.delete",1271525865826
+deactivated,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1271525870537
+activated,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1271525872050
+deactivated,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1271525874468
+activated,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1271525879429
+deactivated,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1271525881566
+activated,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1271525883157
+activated,editor,org.eclipse.jst.pagedesigner,1.2.0.v20090602,"org.eclipse.jst.pagedesigner.PageDesignerEditor",1271525901206
+executed,command,org.eclipse.ui,3.5.0.I20090604-2000,"org.eclipse.ui.file.save",1271525920114
+deactivated,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1271525958380
+activated,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1271525974183
+activated,editor,org.eclipse.ve.java.core,1.4.0.v200907091627,"org.eclipse.ve.internal.java.codegen.editorpart.JavaVisualEditor",1271525976414
+activated,editor,org.eclipse.ui.browser,3.2.300.v20090526,"org.eclipse.ui.browser.editor",1271525990594
+activated,view,org.eclipse.ui.navigator.resources,3.4.0.I20090525-2000,"org.eclipse.ui.navigator.ProjectExplorer",1271525993106
+opened,editor,org.eclipse.jst.pagedesigner,1.2.0.v20090602,"org.eclipse.jst.pagedesigner.PageDesignerEditor",1271525995867
+activated,editor,org.eclipse.jst.pagedesigner,1.2.0.v20090602,"org.eclipse.jst.pagedesigner.PageDesignerEditor",1271525995930
+executed,command,org.eclipse.ui,3.5.0.I20090604-2000,"org.eclipse.ui.file.save",1271526027332
+activated,editor,org.eclipse.ui.browser,3.2.300.v20090526,"org.eclipse.ui.browser.editor",1271526069794
+closed,editor,org.eclipse.jst.pagedesigner,1.2.0.v20090602,"org.eclipse.jst.pagedesigner.PageDesignerEditor",1271526069794
+error,log,,,"Problems occurred when invoking code from plug-in: ""org.eclipse.ui.workbench"".",1271526078000
+deactivated,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1271526078015
+activated,editor,org.eclipse.jst.pagedesigner,1.2.0.v20090602,"org.eclipse.jst.pagedesigner.PageDesignerEditor",1271526078031

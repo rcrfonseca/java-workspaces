@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+started,bundle,org.eclipse.wst.xml.core,1.1.400.v200904300540,"org.eclipse.wst.xml.core",1271529685270
+started,bundle,org.eclipse.dltk.core,1.0.0.v20090617-1157,"org.eclipse.dltk.core",1271529685270
+started,bundle,org.eclipse.dltk.launching,1.0.0.v20090610-1638,"org.eclipse.dltk.launching",1271529685270
+started,bundle,org.eclipse.dltk.ui,1.0.0.v20090617-1521,"org.eclipse.dltk.ui",1271529685270
+started,bundle,org.eclipse.php.core,2.1.0.v20090617-2341,"org.eclipse.php.core",1271529685270
+started,bundle,org.eclipse.php.debug.core,2.1.0.v20090617-2341,"org.eclipse.php.debug.core",1271529685270
+started,bundle,org.eclipse.php.debug.daemon,2.1.0.v20090610-1903,"org.eclipse.php.debug.daemon",1271529685270
+started,bundle,org.eclipse.php.server.core,2.1.0.v20090610-1903,"org.eclipse.php.server.core",1271529685270
+started,bundle,org.eclipse.cdt.core,5.1.0.200906161748,"org.eclipse.cdt.core",1271529685270
+started,bundle,org.eclipse.cdt.make.ui,6.0.0.200906161748,"org.eclipse.cdt.make.ui",1271529685270
+started,bundle,org.eclipse.cdt.ui,5.1.0.200906161748,"org.eclipse.cdt.ui",1271529685270
+os,sysinfo,,,"win32",1271529685270
+arch,sysinfo,,,"x86",1271529685270
+ws,sysinfo,,,"win32",1271529685270
+locale,sysinfo,,,"pt_BR",1271529685270
+processors,sysinfo,,,"4",1271529685270
+java.runtime.name,sysinfo,,,"Java(TM) SE Runtime Environment",1271529685270
+java.runtime.version,sysinfo,,,"1.6.0_18-b07",1271529685270
+java.specification.name,sysinfo,,,"Java Platform API Specification",1271529685270
+java.specification.vendor,sysinfo,,,"Sun Microsystems Inc.",1271529685270
+java.specification.version,sysinfo,,,"1.6",1271529685270
+java.vendor,sysinfo,,,"Sun Microsystems Inc.",1271529685270
+java.version,sysinfo,,,"1.6.0_18",1271529685270
+java.vm.info,sysinfo,,,"mixed mode, sharing",1271529685270
+java.vm.name,sysinfo,,,"Java HotSpot(TM) Client VM",1271529685270

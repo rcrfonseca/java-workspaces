@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+deactivated,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1271527169607
+activated,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1271527174614
+no handler,command,org.eclipse.ui,3.5.0.I20090604-2000,"org.eclipse.ui.edit.delete",1271527176876
+deactivated,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1271527181041
+activated,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1271527181728
+deactivated,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1271527199418
+activated,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1271527202819
+deactivated,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1271527204332
+activated,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1271527211383
+executed,command,org.eclipse.ui,3.5.0.I20090604-2000,"org.eclipse.ui.file.save",1271527236765
+activated,editor,org.eclipse.jst.pagedesigner,1.2.0.v20090602,"org.eclipse.jst.pagedesigner.PageDesignerEditor",1271527241772
+activated,editor,org.eclipse.ui.browser,3.2.300.v20090526,"org.eclipse.ui.browser.editor",1271527256731
+activated,editor,org.eclipse.jst.pagedesigner,1.2.0.v20090602,"org.eclipse.jst.pagedesigner.PageDesignerEditor",1271527259492
+closed,editor,org.eclipse.ui.browser,3.2.300.v20090526,"org.eclipse.ui.browser.editor",1271527259492
+activated,editor,org.eclipse.ve.java.core,1.4.0.v200907091627,"org.eclipse.ve.internal.java.codegen.editorpart.JavaVisualEditor",1271527260444
+activated,editor,org.eclipse.jst.pagedesigner,1.2.0.v20090602,"org.eclipse.jst.pagedesigner.PageDesignerEditor",1271527280911
+executed,command,org.eclipse.ui,3.5.0.I20090604-2000,"org.eclipse.ui.edit.delete",1271527297572
+executed,command,org.eclipse.ui,3.5.0.I20090604-2000,"org.eclipse.ui.edit.delete",1271527298055
+executed,command,org.eclipse.ui,3.5.0.I20090604-2000,"org.eclipse.ui.edit.delete",1271527298087
+executed,command,org.eclipse.ui,3.5.0.I20090604-2000,"org.eclipse.ui.edit.delete",1271527298102
+executed,command,org.eclipse.ui,3.5.0.I20090604-2000,"org.eclipse.ui.edit.delete",1271527298133
+executed,command,org.eclipse.ui,3.5.0.I20090604-2000,"org.eclipse.ui.edit.delete",1271527298165
+executed,command,org.eclipse.ui,3.5.0.I20090604-2000,"org.eclipse.ui.edit.delete",1271527298196
+executed,command,org.eclipse.ui,3.5.0.I20090604-2000,"org.eclipse.ui.edit.delete",1271527298227
+executed,command,org.eclipse.ui,3.5.0.I20090604-2000,"org.eclipse.ui.edit.delete",1271527298274

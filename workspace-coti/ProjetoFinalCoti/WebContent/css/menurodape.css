@@ -1,0 +1,43 @@
+﻿@charset "utf-8";
+/* CSS Document */
+/* Autores: Gileno Oliveira Pinto e Raphael Carlos Rocha Fonseca. */
+/* Última modificação: 2011-03-14. */
+
+#menuRodape{
+	min-height: 45px;
+	width: 850px;
+	background-color: #CCC;
+	border-top: 3px solid #000;
+}
+
+#menuRodape ul { /* formatação */
+	/* do margin-left ao display é para centralizar o menu. */
+	width: 850px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0;
+	margin-bottom: 0;
+	display: table;
+	padding: 0;
+	list-style: none;
+	text-align: center;
+}
+
+#menuRodape ul li{ /* Colocar na horizontal. */
+	display: inline;
+}
+
+#menuRodape ul li a { /* Formatando os links e criando os blocos. */
+	margin-left: 70px;
+	text-decoration: none;
+	float: left;
+	/* visual do link */
+	background-color: #CCC;
+	color: #666;
+}
+
+#menuRodape ul li a:hover { /* Efeito quando passar o mouse. */
+	background-color: #CCC;
+	color: #000;
+	border-bottom: 3px solid #000;
+}

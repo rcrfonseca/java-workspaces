@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+activated,editor,org.eclipse.jst.pagedesigner,1.2.0.v20090602,"org.eclipse.jst.pagedesigner.PageDesignerEditor",1271526877279
+activated,editor,org.eclipse.jst.pagedesigner,1.2.0.v20090602,"org.eclipse.jst.pagedesigner.PageDesignerEditor",1271526881429
+closed,editor,org.eclipse.jst.pagedesigner,1.2.0.v20090602,"org.eclipse.jst.pagedesigner.PageDesignerEditor",1271526881429
+activated,view,org.eclipse.ui.navigator.resources,3.4.0.I20090525-2000,"org.eclipse.ui.navigator.ProjectExplorer",1271526882833
+opened,editor,org.eclipse.jst.pagedesigner,1.2.0.v20090602,"org.eclipse.jst.pagedesigner.PageDesignerEditor",1271526885282
+activated,editor,org.eclipse.jst.pagedesigner,1.2.0.v20090602,"org.eclipse.jst.pagedesigner.PageDesignerEditor",1271526885344
+activated,editor,org.eclipse.jst.pagedesigner,1.2.0.v20090602,"org.eclipse.jst.pagedesigner.PageDesignerEditor",1271526890071
+closed,editor,org.eclipse.jst.pagedesigner,1.2.0.v20090602,"org.eclipse.jst.pagedesigner.PageDesignerEditor",1271526890071
+executed,command,org.eclipse.ui,3.5.0.I20090604-2000,"org.eclipse.ui.file.save",1271526900773
+deactivated,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1271526923954
+activated,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1271526931879
+executed,command,org.eclipse.ui,3.5.0.I20090604-2000,"org.eclipse.ui.file.save",1271526947260
+executed,command,org.eclipse.ui,3.5.0.I20090604-2000,"org.eclipse.ui.file.save",1271526959754
+activated,view,org.eclipse.ui.views,3.4.0.I20090525-2000,"org.eclipse.ui.views.PropertySheet",1271526971095
+deactivated,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1271527005088
+activated,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1271527006289
+activated,editor,org.eclipse.jst.pagedesigner,1.2.0.v20090602,"org.eclipse.jst.pagedesigner.PageDesignerEditor",1271527012935
+executed,command,org.eclipse.ui,3.5.0.I20090604-2000,"org.eclipse.ui.file.save",1271527024072
+deactivated,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1271527029062
+activated,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1271527037315
+activated,view,org.eclipse.ui.views,3.4.0.I20090525-2000,"org.eclipse.ui.views.PropertySheet",1271527045271
+deactivated,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1271527049639
+activated,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1271527051167
+no handler,command,org.eclipse.ui,3.5.0.I20090604-2000,"org.eclipse.ui.edit.delete",1271527052119
+deactivated,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1271527054459

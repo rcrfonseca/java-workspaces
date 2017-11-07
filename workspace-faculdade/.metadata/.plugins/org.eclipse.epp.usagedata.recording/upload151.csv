@@ -1,0 +1,16 @@
+what,kind,bundleId,bundleVersion,description,time
+started,bundle,org.eclipse.php.debug.core,2.1.0.v20090617-2341,"org.eclipse.php.debug.core",1273958610378
+deactivated,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1273958612031
+started,bundle,org.eclipse.mylyn.monitor.ui,3.2.0.v20090617-0100-e3x,"org.eclipse.mylyn.monitor.ui",1273958612765
+started,bundle,org.eclipse.team.ui,3.5.0.I20090430-0408,"org.eclipse.team.ui",1273958619878
+started,bundle,org.eclipse.jsch.core,1.1.100.I20090430-0408,"org.eclipse.jsch.core",1273958619941
+started,bundle,org.eclipse.team.cvs.core,3.3.200.I20090430-0408,"org.eclipse.team.cvs.core",1273958619941
+started,bundle,org.eclipse.ui.console,3.4.0.v20090513,"org.eclipse.ui.console",1273958620065
+started,bundle,org.hibernate.eclipse.jdt.ui,3.2.4.GA-R200905070146-H18,"org.hibernate.eclipse.jdt.ui",1273958620143
+started,bundle,org.eclipse.team.cvs.ui,3.3.200.I20090521-1750,"org.eclipse.team.cvs.ui",1273958620487
+activated,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1273958620533
+deactivated,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1273958620643
+started,bundle,org.hibernate.eclipse,3.2.4.GA-R200905070146-H18,"org.hibernate.eclipse",1273958622370
+started,bundle,org.hibernate.eclipse.console,3.2.4.GA-R200905070146-H18,"org.hibernate.eclipse.console",1273958622619
+started,bundle,org.eclipse.jdt.apt.core,3.3.200.v20090528-1135,"org.eclipse.jdt.apt.core",1273958622650
+started,bundle,org.eclipse.jdt.apt.pluggable.core,1.0.200.v20090526-2130,"org.eclipse.jdt.apt.pluggable.core",1273958622713

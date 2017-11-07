@@ -1,0 +1,15 @@
+@CHARSET "ISO-8859-1";
+
+border{
+	border-width:1px;
+	border-color:blue;
+}
+
+table{
+	border-bottom-width: 1px;
+	border-color: black;
+	background-color: transparent;
+}
+tr:hover{
+	background-color:gray;
+}

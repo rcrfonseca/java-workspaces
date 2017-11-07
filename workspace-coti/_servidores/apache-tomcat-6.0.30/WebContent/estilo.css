@@ -1,0 +1,25 @@
+@CHARSET "ISO-8859-1";
+body{
+
+	font-family:verdana;
+}
+
+#login{
+	border: 1px solid #999;
+	width: 155px; /* Largura. */
+	height: 170px; /* Altura. */
+	padding: 20px; /* Margem interna. */
+	/* margin: auto; /* centralizar na horizontal. */
+	
+	position: absolute; /* */
+	top: 50%; /* */
+	left: 50%; /* */
+	margin-left: -98px;
+	margin-top: -105px;
+}
+
+input{
+	border: 1px dotted #ccc;
+	background-color: #eee;
+	margin-bottom: 5px;
+}

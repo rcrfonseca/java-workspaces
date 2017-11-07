@@ -1,0 +1,115 @@
+@CHARSET "ISO-8859-1";
+body{
+
+	font-family:verdana;
+	margin: 0;
+}
+
+#login{
+	border: 1px solid #999;
+	width: 155px; /* Largura. */
+	height: 170px; /* Altura. */
+	padding: 20px; /* Margem interna. */
+	/* margin: auto; /* centralizar na horizontal. */
+	
+	position: absolute; /* */
+	top: 50%; /* */
+	left: 50%; /* */
+	margin-left: -98px;
+	margin-top: -105px;
+}
+
+input{
+	border: 1px dotted #ccc;
+	background-color: #eee;
+	margin-bottom: 5px;
+}
+
+#container{ /* área total do site. */
+	width: 760px;
+	height: auto;
+	display: table; /* Para expandir a área total. */
+	margin: auto; /* Altura indefinida, centraliza apenas na horizontal. */
+}
+
+#topo{
+	width: 760px;
+	height: 100px;
+	background-color: #999;
+	float: left; /* Tenho que passar o parametro pelo fato de estar dentro de outra área. */
+}
+
+#coluna{
+	width: 200px;
+	height: 400px;
+	float: left;
+	background-color: #ccc;
+}
+
+ul{ /* Padronizar IE e Firefox. */ 
+	margin: 20px; /* A margem é a partir da borda. */
+	padding:: 0; /* A partir do texto. */
+	list-style-position: inside;
+}
+
+li{
+	margin-bottom: 1px;
+	list-style-type: none;
+}
+
+li:hover{
+	color: #FF0000;
+}
+
+tr{
+	background-color: #fff;
+}
+
+th{
+	background-color: #ccc;
+}
+
+tr:hover{
+	background-color: #ddd;
+}
+
+#coluna a{
+	color: #333; /* Cor da fonte do link. */
+	text-decoration: none; /* Sem decoração, sem sublinhado. */
+	font-size: 14px;
+	background-color: #eee;
+	display: block;
+	padding: 5px;
+	border-left: 5px solid #999;
+	
+}
+
+#coluna a:hover{ /* Ao passar o mouse no link. */
+	color: #00f;
+	text-decoration: underline;
+	background-color: #fff;
+	border-left: 5px solid #000;
+}
+
+#conteudo{
+	width: 530px;
+	min-height: 380px; /* Altura mínima de 400px. */
+	background-color: #eee;
+	float: right;
+	padding-left: 30px; 
+	padding-top: 20px;
+}
+
+#rodape{
+	width: 760px;
+	height: 30px;
+	background-color: #999;
+	float: left;
+}
+
+#rodape2{
+	width: 100%;
+	height: 30px;
+	background-color: #000;
+	float: left;
+}

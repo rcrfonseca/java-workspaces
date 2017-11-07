@@ -1,0 +1,25 @@
+@charset "utf-8";
+/* CSS Document */
+/* Autores: Gileno Oliveira Pinto e Raphael Carlos Rocha Fonseca. */
+/* Última modificação: 2011-03-14. */
+
+/* Estilo para tabelas dos DATAGRIDS. */
+
+#datagrid{
+	width: 750px;
+	border: 1px solid #333;
+}
+
+#datagrid th{
+	align: left;
+	background-color: #000;
+	color: #FFF;
+}
+
+#datagrid tr{
+	background-color: #999;
+}
+
+#datagrid tr:hover{
+	background-color: #FFF;
+}

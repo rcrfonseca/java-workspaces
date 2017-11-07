@@ -1,0 +1,109 @@
+package controle;
+
+import java.util.List;
+
+import javax.faces.application.FacesMessage;
+import javax.faces.component.UIComponent;
+import javax.faces.context.FacesContext;
+import javax.faces.validator.ValidatorException;
+
+import dominio.Usuario;
+
+import uni.jsf.dominio.persistencia.HibernateUtil;
+import uni.jsf.dominio.persistencia.UsuarioDAO;
+
+public class UsuarioMB {
+	private Usuario usuario = new Usuario();
+	private UsuarioDAO dao = new UsuarioDAO(HibernateUtil.getSession());
+
+	public void validarEmail(FacesContext contexto, UIComponent componente,
+			Object valor) throws ValidatorException {
+
+		String email = (String) valor;
+		if (!email.contains("@")) {
+			throw new ValidatorException(new FacesMessage(
+					"Validador de Email: O email é inválido"));
+		}
+
+	}
+
+	public String abrirAlteracao() {
+		FacesContext contexto = FacesContext.getCurrentInstance();
+		String id = contexto.getExternalContext().getRequestParameterMap().get(
+				"id");
+
+		this.usuario = this.dao.obter(Long.parseLong(id));
+
+		return "alteracao";
+	}
+
+	public String excluir() {
+		FacesContext contexto = FacesContext.getCurrentInstance();
+		String id = contexto.getExternalContext().getRequestParameterMap().get(
+				"id");
+
+		this.usuario = this.dao.obter(Long.parseLong(id));
+		this.dao.remover(this.usuario);
+
+		return "listar";
+	}
+
+	public String cancelar() {
+		FacesContext contexto = FacesContext.getCurrentInstance();
+		SessaoMB sessao = (SessaoMB) contexto.getApplication()
+				.createValueBinding("#{sessaoMB}").getValue(contexto);
+
+		if (sessao.getUsuario().getId() == null)
+			return "login";
+		else
+			return "listar";
+	}
+
+	public String salvar() {
+		if (this.getUsuario().getId() == 0)
+			this.getUsuario().setId(null);
+
+		boolean usuarioExiste = false;
+
+		if (this.getUsuario().getId() == null) {
+			Usuario usuarioDoBanco = this.dao.obter(this.getUsuario()
+					.getLogin());
+			if (usuarioDoBanco != null)
+				usuarioExiste = true;
+		}
+
+		// se o usuário não existir, deve gravar
+		if (usuarioExiste) {
+			FacesContext contexto = FacesContext.getCurrentInstance();
+			contexto.addMessage("erroLogin", new FacesMessage(
+					"O usuário já existe."));
+
+			return "falha";
+		} else {
+			if (this.getUsuario().getId() == null) {
+				this.dao.incluir(this.getUsuario());
+				return "login";
+			} else {
+				this.dao.alterar(this.getUsuario());
+				return "listar";
+			}
+		}
+
+	}
+
+	public Usuario getUsuario() {
+		return usuario;
+	}
+
+	public void setUsuario(Usuario usuario) {
+		this.usuario = usuario;
+	}
+
+	public List<Usuario> getUsuarios() {
+		return this.dao.listarTodos();
+	}
+
+	public Integer getNumeroUsuarios() {
+		return getUsuarios().size();
+	}
+}

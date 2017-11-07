@@ -1,0 +1,39 @@
+#script do banco, nada de Java
+#banco
+
+
+create database if not exists intensivo;
+
+#cria o banco de dados
+
+use intensivo;
+
+#se conecta ao banco de dados
+
+create table pessoa 
+( idpessoa int primary key, 
+nome varchar (35) not null, 
+sexo enum ('m','f') not null #enum: dois tipos.
+);
+
+# idpessoa chave primária (98% das vezes chave é numérica)
+
+insert into pessoa values (1, 'leo', 'f');
+insert into pessoa values (2, 'luan', 'f');
+insert into pessoa values (3, 'igor', 'f');
+insert into pessoa values (4, 'fernanda', 'f');
+insert into pessoa values (5, 'kelly', 'f');
+insert into pessoa values (6, 'belem', 'f');
+
+#mostra o banco.
+show databases;
+
+#mostra as tabelas do banco.
+show tables;
+
+#descreve a tabela
+desc pessoa;
+
+#mostra os dados de pessoa.
+select * from pessoa;
+						

@@ -1,0 +1,28 @@
+<!-- Use this file to deploy some handlers/chains and services      -->
+<!-- Two ways to do this:                                           -->
+<!--   java org.apache.axis.client.AdminClient deploy.wsdd          -->
+<!--      after the axis server is running                          -->
+<!-- or                                                             -->
+<!--   java org.apache.axis.utils.Admin client|server deploy.wsdd   -->
+<!--      from the same directory that the Axis engine runs         -->
+
+<deployment
+    xmlns="http://xml.apache.org/axis/wsdd/"
+    xmlns:java="http://xml.apache.org/axis/wsdd/providers/java">
+
+  <!-- Services from WSMensagemService WSDL service -->
+
+  <service name="WSMensagem" provider="java:RPC" style="wrapped" use="literal">
+      <parameter name="wsdlTargetNamespace" value="http://webservices1"/>
+      <parameter name="wsdlServiceElement" value="WSMensagemService"/>
+      <parameter name="schemaQualified" value="http://webservices1"/>
+      <parameter name="wsdlServicePort" value="WSMensagem"/>
+      <parameter name="className" value="webservices1.WSMensagemSoapBindingImpl"/>
+      <parameter name="wsdlPortType" value="WSMensagem"/>
+      <parameter name="typeMappingVersion" value="1.2"/>
+      <operation name="getMensagem" qname="operNS:getMensagem" xmlns:operNS="http://webservices1" returnQName="retNS:getMensagemReturn" xmlns:retNS="http://webservices1" returnType="rtns:string" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
+      </operation>
+      <parameter name="allowedMethods" value="getMensagem"/>
+
+  </service>
+</deployment>

@@ -1,0 +1,80 @@
+package dominio;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.SequenceGenerator;
+
+@Entity
+public class Cliente
+	{
+
+		@Id
+		@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "gen_Cliente")
+		@SequenceGenerator(name = "gen_Cliente", sequenceName = "seq_Cliente")
+		private Long id;
+
+		private String nome;
+		private String cpf;
+		private String logradouro;
+		private String numero;
+		private String complemento;
+		private String uf;
+		private String bairro;
+		private String cidade;
+		private String situacao;
+
+		public Cliente()
+			{
+			}
+
+		public Cliente(String modelo, String cor, String placa)
+			{
+				super();
+				this.modelo = modelo;
+				this.cor = cor;
+				this.placa = placa;
+			}
+
+		public Long getId()
+			{
+				return id;
+			}
+
+		public void setId(Long id)
+			{
+				this.id = id;
+			}
+
+		public String getModelo()
+			{
+				return modelo;
+			}
+
+		public void setModelo(String modelo)
+			{
+				this.modelo = modelo;
+			}
+
+		public String getCor()
+			{
+				return cor;
+			}
+
+		public void setCor(String cor)
+			{
+				this.cor = cor;
+			}
+
+		public String getPlaca()
+			{
+				return placa;
+			}
+
+		public void setPlaca(String placa)
+			{
+				this.placa = placa;
+			}
+
+	}

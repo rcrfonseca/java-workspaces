@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+activated,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1271526113942
+error,log,,,"Unhandled event loop exception",1271526113942
+error,log,,,"Unhandled event loop exception",1271526116984
+error,log,,,"Unhandled event loop exception",1271526126734
+executed,command,org.eclipse.ui,3.5.0.I20090604-2000,"org.eclipse.ui.edit.delete",1271526129433
+error,log,,,"Unhandled event loop exception",1271526234577
+error,log,,,"Unhandled event loop exception",1271526241129
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.0.v20090603,"org.eclipse.ui.edit.text.goto.wordNext",1271526247478
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.0.v20090603,"org.eclipse.ui.edit.text.goto.wordNext",1271526247618
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.0.v20090603,"org.eclipse.ui.edit.text.goto.wordNext",1271526247806
+failed,command,org.eclipse.ui,3.5.0.I20090604-2000,"org.eclipse.ui.file.save",1271526250910
+error,log,,,"""Save"" did not complete normally.  Please see the log for more information.",1271526250910
+error,log,,,"java.lang.NullPointerException",1271526250926
+deactivated,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1271526250941
+activated,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1271526252673
+error,log,,,"Unhandled event loop exception",1271526252673
+failed,command,org.eclipse.ui,3.5.0.I20090604-2000,"org.eclipse.ui.file.save",1271526259303
+error,log,,,"""Save"" did not complete normally.  Please see the log for more information.",1271526259303
+error,log,,,"java.lang.NullPointerException",1271526259303
+deactivated,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1271526259350
+activated,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1271526260426
+error,log,,,"Unhandled event loop exception",1271526260426
+deactivated,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1271526263874
+activated,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1271526265028
+error,log,,,"Unhandled event loop exception",1271526265028

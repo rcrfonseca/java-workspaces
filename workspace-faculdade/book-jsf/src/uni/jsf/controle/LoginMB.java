@@ -1,0 +1,69 @@
+package uni.jsf.controle;
+
+import javax.faces.application.FacesMessage;
+import javax.faces.context.FacesContext;
+
+import uni.jsf.dominio.Usuario;
+import uni.jsf.dominio.persistencia.HibernateUtil;
+import uni.jsf.dominio.persistencia.UsuarioDAO;
+
+public class LoginMB
+	{
+		private Usuario usuario = new Usuario();
+		private UsuarioDAO dao = new UsuarioDAO(HibernateUtil.getSession());
+
+		public String logar()
+			{
+				Usuario usuarioDoBanco = this.dao.obter(this.getUsuario()
+						.getLogin());
+				if (usuarioDoBanco == null)
+					{
+						FacesContext contexto = FacesContext
+								.getCurrentInstance();
+						contexto.addMessage("erroLogin", new FacesMessage(
+								"O usuário não existe."));
+						return "falha";
+					} else if (usuarioDoBanco.validarSenha(this.getUsuario()
+						.getSenha()))
+					{
+						FacesContext contexto = FacesContext
+								.getCurrentInstance();
+						SessaoMB sessao = (SessaoMB) contexto.getApplication()
+								.createValueBinding("#{sessaoMB}").getValue(
+										contexto);
+						// armazena o usuário na sessão
+						sessao.setUsuario(usuarioDoBanco);
+
+						return "sucesso";
+					} else
+					{
+						FacesContext contexto = FacesContext
+								.getCurrentInstance();
+						contexto.addMessage("erroLogin", new FacesMessage(
+								"Senha inválida."));
+						return "falha";
+					}
+			}
+
+		public String logoff()
+			{
+				FacesContext contexto = FacesContext.getCurrentInstance();
+				SessaoMB sessao = (SessaoMB) contexto.getApplication()
+						.createValueBinding("#{sessaoMB}").getValue(contexto);
+				// armazena o usuário na sessão
+				sessao.setUsuario(new Usuario());
+
+				return "login";
+			}
+
+		public Usuario getUsuario()
+			{
+				return usuario;
+			}
+
+		public void setUsuario(Usuario usuario)
+			{
+				this.usuario = usuario;
+			}
+
+	}

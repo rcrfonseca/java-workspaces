@@ -1,0 +1,61 @@
+package uni.jsf.dominio.persistencia;
+
+import java.util.List;
+
+import org.hibernate.Query;
+import org.hibernate.Session;
+import org.hibernate.Transaction;
+
+import uni.jsf.dominio.Livro;
+
+public class LivroDAO
+{
+	private Session session;
+
+	public LivroDAO(Session session)
+	{
+		this.session = session;
+	}
+
+	public void incluir(Livro livro)
+	{
+		Transaction transaction = session.beginTransaction();
+		transaction.begin();
+		session.save(livro);
+		transaction.commit();
+	}
+
+	public Livro obter(String isbn)
+	{
+		Query query = session.createQuery("from Livro where isbn = :isbn ");
+		query.setParameter("isbn", isbn);
+		return (Livro) query.uniqueResult();
+	}
+
+	public void alterar(Livro livro)
+	{
+		Transaction transaction = session.beginTransaction();
+		transaction.begin();
+		session.saveOrUpdate(livro);
+		transaction.commit();
+	}
+
+	public Livro obter(Long id)
+	{
+		return (Livro) session.load(Livro.class, id);
+	}
+
+	public List<Livro> listarTodos()
+	{
+		return session.createQuery("from Livro").list();
+	}
+
+	public void remover(Livro livro)
+	{
+		Transaction transaction = session.beginTransaction();
+		transaction.begin();
+		session.delete(livro);
+		transaction.commit();
+	}
+
+}

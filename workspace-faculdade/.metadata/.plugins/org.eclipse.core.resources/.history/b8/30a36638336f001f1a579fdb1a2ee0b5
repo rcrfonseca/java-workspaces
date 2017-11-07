@@ -1,0 +1,118 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+	<!--
+		=========== FULL CONFIGURATION FILE ==================================
+	-->
+
+<faces-config xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-facesconfig_2_0.xsd"
+	version="2.0">
+
+
+	<validator>
+		<validator-id>Email</validator-id>
+		<validator-class>controle.ValidadorEmail</validator-class>
+	</validator>
+
+	<managed-bean>
+		<managed-bean-name>sessaoMB</managed-bean-name>
+		<managed-bean-class>controle.SessaoMB</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+	</managed-bean>
+
+	<managed-bean>
+		<managed-bean-name>userMB</managed-bean-name>
+		<managed-bean-class>controle.UsuarioMB</managed-bean-class>
+		<managed-bean-scope>request</managed-bean-scope>
+	</managed-bean>
+
+	<managed-bean>
+		<managed-bean-name>veiculoMB</managed-bean-name>
+		<managed-bean-class>controle.LivroMB</managed-bean-class>
+		<managed-bean-scope>request</managed-bean-scope>
+	</managed-bean>
+
+	<managed-bean>
+		<managed-bean-name>loginMB</managed-bean-name>
+		<managed-bean-class>controle.LoginMB</managed-bean-class>
+		<managed-bean-scope>request</managed-bean-scope>
+	</managed-bean>
+
+	<navigation-rule>
+		<from-view-id>/login.jsp</from-view-id>
+		<navigation-case>
+			<from-outcome>sucesso</from-outcome>
+			<to-view-id>/home.jsp</to-view-id>
+		</navigation-case>
+		<navigation-case>
+			<from-outcome>cadastrarUsuario</from-outcome>
+			<to-view-id>cadastrousuarios.jsp</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+
+	<navigation-rule>
+		<from-view-id>/cadastrousuarios.jsp</from-view-id>
+		<navigation-case>
+			<from-outcome>login</from-outcome>
+			<to-view-id>/login.jsp</to-view-id>
+		</navigation-case>
+		<navigation-case>
+			<from-outcome>listar</from-outcome>
+			<to-view-id>/listarusuarios.jsp</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+
+	<navigation-rule>
+		<from-view-id>/listarusuarios.jsp</from-view-id>
+		<navigation-case>
+			<from-outcome>exibirHome</from-outcome>
+			<to-view-id>home.jsp</to-view-id>
+		</navigation-case>
+		<navigation-case>
+			<from-outcome>alteracao</from-outcome>
+			<to-view-id>cadastrousuarios.jsp</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+
+	<navigation-rule>
+		<from-view-id>/cadastroveiculos.jsp</from-view-id>
+		<navigation-case>
+			<from-outcome>listar</from-outcome>
+			<to-view-id>/listarveiculos.jsp</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+
+	<navigation-rule>
+		<from-view-id>/listarveiculos.jsp</from-view-id>
+		<navigation-case>
+			<from-outcome>exibirHome</from-outcome>
+			<to-view-id>/home.jsp</to-view-id>
+		</navigation-case>
+		<navigation-case>
+			<from-outcome>editarVeiculo</from-outcome>
+			<to-view-id>/cadastroveiculos.jsp</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+
+	<navigation-rule>
+		<from-view-id>/home.jsp</from-view-id>
+		<navigation-case>
+			<from-outcome>listaDeVeiculos</from-outcome>
+			<to-view-id>/listarveiculos.jsp</to-view-id>
+		</navigation-case>
+		<navigation-case>
+			<from-outcome>listaDeUsuarios</from-outcome>
+			<to-view-id>/listarusuarios.jsp</to-view-id>
+		</navigation-case>
+				<navigation-case>
+			<from-outcome>listaDeClientes</from-outcome>
+			<to-view-id>/listarclientes.jsp</to-view-id>
+		</navigation-case>
+		<navigation-case>
+			<from-outcome>login</from-outcome>
+			<to-view-id>/login.jsp</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+
+</faces-config>

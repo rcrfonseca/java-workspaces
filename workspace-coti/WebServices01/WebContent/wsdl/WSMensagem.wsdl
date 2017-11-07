@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions targetNamespace="http://webservices1" xmlns:apachesoap="http://xml.apache.org/xml-soap" xmlns:impl="http://webservices1" xmlns:intf="http://webservices1" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<!--WSDL created by Apache Axis version: 1.4
+Built on Apr 22, 2006 (06:55:48 PDT)-->
+ <wsdl:types>
+  <schema elementFormDefault="qualified" targetNamespace="http://webservices1" xmlns="http://www.w3.org/2001/XMLSchema">
+   <element name="getMensagem">
+    <complexType/>
+   </element>
+   <element name="getMensagemResponse">
+    <complexType>
+     <sequence>
+      <element name="getMensagemReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+  </schema>
+ </wsdl:types>
+
+   <wsdl:message name="getMensagemRequest">
+
+      <wsdl:part element="impl:getMensagem" name="parameters"/>
+
+   </wsdl:message>
+
+   <wsdl:message name="getMensagemResponse">
+
+      <wsdl:part element="impl:getMensagemResponse" name="parameters"/>
+
+   </wsdl:message>
+
+   <wsdl:portType name="WSMensagem">
+
+      <wsdl:operation name="getMensagem">
+
+         <wsdl:input message="impl:getMensagemRequest" name="getMensagemRequest"/>
+
+         <wsdl:output message="impl:getMensagemResponse" name="getMensagemResponse"/>
+
+      </wsdl:operation>
+
+   </wsdl:portType>
+
+   <wsdl:binding name="WSMensagemSoapBinding" type="impl:WSMensagem">
+
+      <wsdlsoap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+
+      <wsdl:operation name="getMensagem">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="getMensagemRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="getMensagemResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+   </wsdl:binding>
+
+   <wsdl:service name="WSMensagemService">
+
+      <wsdl:port binding="impl:WSMensagemSoapBinding" name="WSMensagem">
+
+         <wsdlsoap:address location="http://localhost:8180/WebServices01/services/WSMensagem"/>
+
+      </wsdl:port>
+
+   </wsdl:service>
+
+</wsdl:definitions>

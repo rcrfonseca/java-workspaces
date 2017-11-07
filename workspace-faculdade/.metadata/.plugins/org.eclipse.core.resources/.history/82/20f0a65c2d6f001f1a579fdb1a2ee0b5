@@ -1,0 +1,67 @@
+package controle;
+
+import java.util.List;
+
+import javax.faces.context.FacesContext;
+
+import persistencia.HibernateUtil;
+
+
+public class VeiculoMB
+	{
+		private Veiculo Veiculo = new Veiculo();
+		private VeiculoDAO dao = new VeiculoDAO(HibernateUtil.getSession());
+
+		public String abrirAlteracao()
+			{
+				FacesContext contexto = FacesContext.getCurrentInstance();
+				String id = contexto.getExternalContext()
+						.getRequestParameterMap().get("id");
+
+				this.Veiculo = this.dao.obter(Long.parseLong(id));
+
+				return "editarVeiculo";
+			}
+
+		public String excluir()
+			{
+				FacesContext contexto = FacesContext.getCurrentInstance();
+				String id = contexto.getExternalContext()
+						.getRequestParameterMap().get("id");
+
+				this.Veiculo = this.dao.obter(Long.parseLong(id));
+				this.dao.remover(this.Veiculo);
+
+				return "listar";
+			}
+
+		public String salvar()
+			{
+				if (this.getVeiculo().getId() == 0)
+					this.getVeiculo().setId(null);
+
+				this.dao.alterar(this.getVeiculo());
+				return "listar";
+
+			}
+
+		public Veiculo getVeiculo()
+			{
+				return Veiculo;
+			}
+
+		public void setVeiculo(Veiculo usuario)
+			{
+				this.Veiculo = usuario;
+			}
+
+		public List<Veiculo> getVeiculos()
+			{
+				return this.dao.listarTodos();
+			}
+
+		public Integer getNumeroVeiculos()
+			{
+				return getVeiculos().size();
+			}
+	}

@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+java.vendor,sysinfo,,,"Sun Microsystems Inc.",1273958605947
+java.version,sysinfo,,,"1.6.0_20",1273958605947
+java.vm.info,sysinfo,,,"mixed mode, sharing",1273958605947
+java.vm.name,sysinfo,,,"Java HotSpot(TM) Client VM",1273958605947
+java.vm.specification.name,sysinfo,,,"Java Virtual Machine Specification",1273958605947
+java.vm.specification.vendor,sysinfo,,,"Sun Microsystems Inc.",1273958605947
+java.vm.specification.version,sysinfo,,,"1.0",1273958605947
+java.vm.vendor,sysinfo,,,"Sun Microsystems Inc.",1273958605947
+java.vm.version,sysinfo,,,"16.3-b01",1273958605947
+started,bundle,org.eclipse.mylyn.bugzilla.ui,3.2.0.v20090617-0100-e3x,"org.eclipse.mylyn.bugzilla.ui",1273958605979
+started,bundle,org.eclipse.ui.forms,3.4.0.v20090526,"org.eclipse.ui.forms",1273958606665
+activated,view,org.eclipse.ui.navigator.resources,3.4.0.I20090525-2000,"org.eclipse.ui.navigator.ProjectExplorer",1273958606743
+started,bundle,org.eclipse.epp.usagedata.ui,1.1.0.R200906100410,"org.eclipse.epp.usagedata.ui",1273958607367
+started,bundle,org.eclipse.dltk.core,1.0.0.v20090617-1157,"org.eclipse.dltk.core",1273958607461
+started,bundle,org.eclipse.mylyn.tasks.ui,3.2.0.v20090617-0100-e3x,"org.eclipse.mylyn.tasks.ui",1273958607804
+started,bundle,org.eclipse.mylyn.team.ui,3.2.0.v20090617-0100-e3x,"org.eclipse.mylyn.team.ui",1273958607851
+started,bundle,org.eclipse.update.scheduler,3.2.200.v20081127,"org.eclipse.update.scheduler",1273958607929
+started,bundle,org.eclipse.dltk.launching,1.0.0.v20090610-1638,"org.eclipse.dltk.launching",1273958607960
+started,bundle,org.eclipse.dltk.ui,1.0.0.v20090617-1521,"org.eclipse.dltk.ui",1273958608069
+started,bundle,org.eclipse.update.core,3.2.300.v20090525,"org.eclipse.update.core",1273958608116
+started,bundle,org.eclipse.wst.ws.service.policy.ui,1.0.102.v200903070248,"org.eclipse.wst.ws.service.policy.ui",1273958608131
+started,bundle,org.eclipse.php.debug.daemon,2.1.0.v20090610-1903,"org.eclipse.php.debug.daemon",1273958608225
+started,bundle,org.eclipse.debug.ui,3.5.0.v20090603,"org.eclipse.debug.ui",1273958609364
+started,bundle,org.eclipse.php.server.core,2.1.0.v20090610-1903,"org.eclipse.php.server.core",1273958609364
+started,bundle,org.eclipse.php.core,2.1.0.v20090617-2341,"org.eclipse.php.core",1273958609645

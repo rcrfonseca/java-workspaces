@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+activated,view,org.eclipse.ui.navigator.resources,3.4.0.I20090525-2000,"org.eclipse.ui.navigator.ProjectExplorer",1271520318311
+deactivated,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1271520330675
+started,bundle,org.eclipse.ant.ui,3.4.0.v20090520,"org.eclipse.ant.ui",1271520339860
+started,bundle,org.eclipse.ui.views.log,1.0.100.v20090527,"org.eclipse.ui.views.log",1271520339896
+started,bundle,org.eclipse.pde.ui,3.5.0.v20090528,"org.eclipse.pde.ui",1271520339904
+activated,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1271520340015
+executed,command,org.eclipse.ltk.ui.refactoring,3.4.100.v20090604,"org.eclipse.ltk.ui.refactoring.commands.renameResource",1271520340015
+executed,command,org.eclipse.ui,3.5.0.I20090604-2000,"org.eclipse.ui.edit.rename",1271520340015
+deactivated,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1271520348725
+executed,command,org.eclipse.ui,3.5.0.I20090604-2000,"org.eclipse.ui.edit.copy",1271520355676
+error,log,,,"Internal Error",1271520356237
+error,log,,,"Problems encountered while moving resources.",1271520356238
+activated,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1271520360248
+executed,command,org.eclipse.ltk.ui.refactoring,3.4.100.v20090604,"org.eclipse.ltk.ui.refactoring.commands.renameResource",1271520360254
+executed,command,org.eclipse.ui,3.5.0.I20090604-2000,"org.eclipse.ui.edit.rename",1271520360254
+deactivated,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1271520362954
+executed,command,org.eclipse.ui,3.5.0.I20090604-2000,"org.eclipse.ui.edit.paste",1271520364452
+error,log,,,"Internal Error",1271520374758
+error,log,,,"Problems encountered while moving resources.",1271520374790
+activated,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1271520382580
+executed,command,org.eclipse.ltk.ui.refactoring,3.4.100.v20090604,"org.eclipse.ltk.ui.refactoring.commands.renameResource",1271520382589
+executed,command,org.eclipse.ui,3.5.0.I20090604-2000,"org.eclipse.ui.edit.rename",1271520382589
+opened,editor,org.eclipse.jst.jsp.ui,1.1.400.v200904292008,"org.eclipse.jst.jsp.core.jspsource.source",1271520386786
+activated,editor,org.eclipse.jst.jsp.ui,1.1.400.v200904292008,"org.eclipse.jst.jsp.core.jspsource.source",1271520386817
+activated,editor,org.eclipse.ui.browser,3.2.300.v20090526,"org.eclipse.ui.browser.editor",1271520388345
